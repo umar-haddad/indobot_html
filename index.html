@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tugas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="container">
+        <div class="row justify-content-center">
+            <div class="col-12">
+                <div class="card">
+                    <div class="judul">
+                        <img class="img" src="img/photo.png" alt="">
+                        <h1 class="text text-center">IndoBot</h1>
+                    </div>
+                    <div>
+                        <h2 class="text-center">Sign Up</h2>
+                        <form id="signupForm">
+                            <div class="mb-3">
+                                <label for="username" class="form-label">Username</label>
+                                <input type="text" class="form-control" id="username" name="username" required placeholder="Nama Anda">
+                                <small class="text-danger" id="usernameError"></small>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" name="email" required placeholder="Masukkan email">
+                                <small class="text-danger" id="emailError"></small>
+                            </div>
+                            <div class="mb-3">
+                                <label for="password" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="password" name="password" required placeholder="Masukkan password">
+                                <small class="text-danger" id="passwordError"></small>
+                            </div>
+                            <div class="form-check checkbox-label">
+                                <input type="checkbox" class="form-check-input" id="terms" required>
+                                <label class="form-check-label" for="terms">Saya setuju dengan syarat dan ketentuan</label>
+                                <small class="text-danger" id="termsError"></small>
+                            </div>
+                            <button type="submit" id="submit" class="btn btn-primary w-100 signup-btn">Buat Akun</button>
+                            
+    
+                            <div class="message-card card" id="formMessage">
+                                <div class="card-body text-center">
+                                    <h3 id="messageText"></h3>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+<script src="set.js"></script>
+</body>
+</html>
